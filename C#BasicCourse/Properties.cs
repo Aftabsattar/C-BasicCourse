@@ -2,7 +2,9 @@
  in this class we use properties 
  */
 
-public class Properties
+using C_BasicCourse;
+
+public class Properties : IEnterfaces
 {
     private int _age;   // 👉 backing field
     private string? _email;
@@ -17,7 +19,7 @@ public class Properties
             }
         }
     }
-    public string Email
+    public string? Email
     {
         get { return _email; }
 
@@ -34,10 +36,18 @@ public class Properties
         }
 
     }
-    public void Display()
+
+    public void DiplyaResult()
     {
         Console.WriteLine($"your age is:{Age}");
         Console.WriteLine($"your Email is:{Email}");
-
     }
 }
+//main function code 
+//Properties properties = new Properties();
+//properties.Age = 20;
+//properties.Email = "maftab256@gmail.com";
+//Console.WriteLine(properties.Email);
+//Console.WriteLine(properties.Age);
+// in this we use interface to print propertires value 
+//properties.DiplyaResult();

@@ -2,7 +2,7 @@
 
 namespace C_BasicCourse;
 
-public class Employee
+public class InheritanceEmployee
 {
     /* FirstName, Lastname,Email these are the filed because it does't have the get() ,set() logic*/
     public string? FirstName; 
@@ -15,13 +15,20 @@ public class Employee
     }
 }
 //FullTimeEmployee is a child class which inherited from base class Employee
-public class FullTimeEmployee : Employee
+public class FullTimeEmployee : InheritanceEmployee
 {
     //this is a child class property 
     public float yearlySalarly;
 } 
-public class PartTimeEmployee : Employee
+public class PartTimeEmployee : InheritanceEmployee
 {
     //this is a child class property 
     public float HoureSallary;
 }
+//main function code
+//FullTimeEmployee Ftp = new FullTimeEmployee();
+//            Ftp.FirstName = "Muhammad";
+//            Ftp.LastName = "Aftab";
+//            Ftp.Email = "aftabsattar14@gmail.com";
+//            Ftp.yearlySalarly = 5000;
+//            Ftp.PrintFullName();
