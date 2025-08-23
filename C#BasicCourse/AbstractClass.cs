@@ -13,3 +13,9 @@ public class AbstractClass : Abstract
         Console.WriteLine($"Name is:{Name}");
     }
 }
+
+// main function implementation
+//AbstractClass abstractClass = new AbstractClass();
+//            abstractClass.Name = "Test";
+//            abstractClass.Show();
+//            abstractClass.Display();

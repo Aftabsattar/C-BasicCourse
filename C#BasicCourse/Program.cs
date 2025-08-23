@@ -1,15 +1,12 @@
-﻿using System.Reflection.Metadata;
-using C_BasicCourse;
+﻿using C_BasicCourse;
 namespace CSharpBasicCourse
 {
     class Program
     {
         static void Main(string[] args)
         {
-            AbstractClass abstractClass = new AbstractClass();
-            abstractClass.Name = "Test";
-            abstractClass.Show();
-            abstractClass.Display();
+            Delegates.CalculationDelegate calD = Delegates.Div;
+            Console.WriteLine("the Divsion of two number",+ calD(2,5));
         }
     }
 }
