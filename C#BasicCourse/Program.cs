@@ -1,26 +1,33 @@
-﻿using C_BasicCourse;
+﻿using C_BasicCourse.ExceptionHandling;
 namespace CSharpBasicCourse
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Delegates.CalculationDelegate calD = Delegates.Div;
-            Console.WriteLine("the Divsion of two number",+ calD(2,5));
+            //ExceptionPrac exception = new ExceptionPrac();
+            //exception.GetFile();
+            InnerException innerException = new InnerException();
+            innerException.Divide();
+        }
+
+        public void Create()
+        {
+            Console.WriteLine("Enter Student Name:");
         }
     }
 }
 // name space Concepts
-namespace ProjectA 
+namespace ProjectA
 {
-    namespace TeamA 
+    namespace TeamA
     {
-        class Program 
-        { 
-            public static void MethodA() 
-            { 
-                Console.WriteLine("Hello from TeamA"); 
-            } 
+        class Program
+        {
+            public static void MethodA()
+            {
+                Console.WriteLine("Hello from TeamA");
+            }
         }
 
     }
