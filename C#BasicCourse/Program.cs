@@ -1,14 +1,12 @@
-﻿using C_BasicCourse.ExceptionHandling;
+﻿using C_BasicCourse.Enums;
 namespace CSharpBasicCourse
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //ExceptionPrac exception = new ExceptionPrac();
-            //exception.GetFile();
-            InnerException innerException = new InnerException();
-            innerException.Divide();
+          EnumPractice  enumPractice = new EnumPractice();
+            enumPractice.DispayDaysName();
         }
 
         public void Create()
