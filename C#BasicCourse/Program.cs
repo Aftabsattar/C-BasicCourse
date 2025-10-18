@@ -1,17 +1,10 @@
-﻿using C_BasicCourse.Enums;
-namespace CSharpBasicCourse
+﻿namespace CSharpBasicCourse
 {
     class Program
     {
         static void Main(string[] args)
         {
-          EnumPractice  enumPractice = new EnumPractice();
-            enumPractice.DispayDaysName();
-        }
-
-        public void Create()
-        {
-            Console.WriteLine("Enter Student Name:");
+        
         }
     }
 }
